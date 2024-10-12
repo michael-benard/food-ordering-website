@@ -1,0 +1,208 @@
+body{
+    color: #ffff;
+}
+form{
+    background-color: #000;
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:10px 60px;
+}
+#header{
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 39;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.bi-list{
+    display: none;
+}
+.bi-x {
+    display: none;
+}
+div.logo p{
+    font-size: larger;
+    margin: 0;
+    padding: 0;
+    color:gold;
+    font-weight: bolder;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.navlinks{
+    display: flex;
+    align-items: center;
+}
+ul.menue{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: start;
+    justify-content: start;
+    gap: 30px;
+    color:#ffff;
+}
+ul li{
+    list-style: none;
+}
+ul.menue li:hover div.about-info{
+    visibility: visible;
+    opacity: 1;
+    z-index: 10;
+    top: 60px;
+}
+div.cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+p{
+    color: #ffff;
+}
+.link{
+    color: blue;
+}
+input{
+    width: 60%;
+    height: 30px;
+}
+div.col-12{
+    margin-bottom: 20px;
+}
+#Create{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+}
+#footer{
+    background-color: #000;
+    margin-top: 90px;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+#footer h2{
+    color: #ff8c00;
+    font-size: larger;
+}
+#footer p{
+    color: #ff8c00;
+    font-size: small;
+}
+#footer ul li a{
+    color: #ff8c00;
+}
+#footer ul li a:hover{
+    color: #ffff;
+    text-decoration: underline;
+}
+#footer span a{
+    color: #ff8c00;
+    margin-right: 20px;
+}
+select{
+    background-color: #ff8c00;
+}
+@media(max-width:778px){
+    input{
+        width: 90%;
+        height: 30px;
+    }
+        .bi-list{
+            display: block;
+            position: absolute;
+            color: #ff8c00;
+            cursor: pointer;
+            font-size: xx-large;
+            background-color: #000;
+            top: 80px;
+            right: 10px;
+        }
+        .bi-x{
+            display: block;
+            position: absolute;
+            cursor: pointer;
+            color: #ff8c00;
+            font-size: xx-large;
+            top: 70px;
+            right: 10px;
+            z-index: 40;
+        }
+    
+        ul.menue{
+            z-index: 30;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            position: absolute;
+            top: 70px;
+            right: -80%;
+            padding-left: 20px;
+            margin: 0;
+            align-items: start;
+            justify-content: start;
+            gap: 30px;
+            color:#ffff;
+            padding-top: 50px;
+            background-color:#000;
+            width: 70%;
+            height: 100vh;
+            transition: right 0.7s ease-in-out;
+        }
+        ul.menue-active{
+            right:0;
+        }
+        .accordion-button{
+            font-size: large;
+            color: #000;
+        }
+        .accordion{
+           --bs-accordion-btn-bg:#000;
+            --bs-accordion-bg:#0000;
+            --bs-accordion-active-bg:#0000;
+            --bs-accordion-border-color:#000;
+            --bs-accordion-btn-padding-x:2px;
+            --bs-accordion-body-padding-x:0;
+            margin-bottom: 4px;
+        }
+        .accordion-button ul li{
+            color: #ffff;
+            margin-left: -30px;
+        }
+        .accordion-body ul li a{
+            color: #ffff;
+        }
+        .accordion-body ul li{
+            padding: 10px;
+            margin-left: -20px;
+        }
+        .accordion-button:not(.collapse){
+            box-shadow: none;
+        }
+        .logo p{
+            font-size: larger;
+            margin: 0;
+            padding: 0;
+            color:gold;
+            font-weight: bolder;
+        }
+}

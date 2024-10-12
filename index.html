@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MealZone.com</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-md-2 logo d-flex align-items-center justify-content-center">
+                    <p>MEALZONE</p>
+                </div>
+                <div class="col-5 col-md-5 navlinks">
+                    <span id="harmburger"><i class="bi bi-list"></i></span>
+                    <span id="cancel"><i class="bi bi-x"></i></span>
+                    <ul class="menue" id="menue">
+                        <li><a href="">Home</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li class="d-none d-md-flex">
+                            <a href="">Categories</a>
+                        <ul class="sub-menue">
+                            <li><a href="#continental">Continental Dishes</a></li>
+                            <li><a href="#enter-continental">Enter-continental Dishes</a></li>
+                        </ul></li>
+                        <li class="d-block d-lg-none">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                     <ul>
+                                        <li>Categories</li>
+                                     </ul>
+                                    </button>
+                                  </h2>
+                                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <ul class="sub-menue2">
+                                            <li><a href="#continental">continental</a></li>
+                                            <li><a href="#enter-continental">Intra-contenetal</a></li>
+                                        </ul>
+                                    </div>
+                                  </div>
+                                </div>        
+                            </div>
+                        </li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 cart2 order-3 order-md-3 d-flex  align-items-md-center justify-content-md-center">
+                    <i class="bi bi-search" id="search"></i>
+                    <input type="text" title="search" id="searchs" placeholder="Search food" class="order-3">
+                </div>
+                <div class="col-2 order-2 order-md-4 cart">
+                    <span id="cart">
+                        <a href="cart.html" title="cart">
+                            <i class="bi bi-cart"></i>
+                            <div class="number-cart" id="number-cart"></div>
+                        </a>
+                    </span>
+                    <div id="account">
+                        <a href="account.html" title="account">
+                            <i class="bi bi-person"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Notification"></div>
+    </section>
+    <section id="intro">
+        <div class="container">
+           <div class="row">
+                <div class="col-9   textstart">
+                    <h1>Fresh And Delicious</h1>
+                    <h5>RESTAURANT</h5>
+                    <p>WELCOME TO MEALZONE RESTAURANT.THE FOOD HERE IS FERSH AND DELICIOUS, AND THE PRICE IS AFFORDABLE,YOUR ARE WELCOME TO TASTE IT</p>
+                </div>
+           </div>
+        </div>
+    </section>
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-12 d-flex align-items-center justify-content-center">
+                <h2>Our Menu</h2>
+            </div>
+        </div>
+    </div>
+    <section id="main">
+        <section id="enter-continental">
+            <div class="container">
+                <div class="row">
+    
+                </div>
+            </div>
+        </section>
+        <section id="continental">
+            <div class="container">
+                <div class="row">
+    
+                </div>
+            </div>
+        </section>
+    </section>
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4" id="About">
+                    <h2>About MEALZONE</h2>
+                    <p>WELCOME TO MEALZONE RESTAURANT.THE FOOD HERE IS FERSH AND DELICIOUS, AND THE PRICE IS AFFORDABLE,YOUR ARE WELCOME TO TASTE IT</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h2>Products And services</h2>
+                    <ul>
+                        <li><a href="">Customer service</a></li>
+                        <li><a href="">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4">
+                    <h2>Store location</h2>
+                    <div>
+                        <p>select your region
+                            <select name="region" id="section" title="options">
+                                <option value="USA">United states</option>
+                                <option value="USA">Nigeria</option>
+                                <option value="USA">other countries</option>
+                            </select>
+                        </p>
+                        <span><a href="facebook" title="link"><i class="bi bi-facebook"></i></a></span>
+                        <span><a href="instagram" title="link"><i class="bi bi-instagram"></i></a></span>
+                        <span><a href="twitter" title="link"><i class="bi bi-twitter"></i></a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

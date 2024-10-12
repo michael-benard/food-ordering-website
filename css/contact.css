@@ -1,0 +1,261 @@
+#header {
+    background-color: #000;
+    z-index: 39;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+#intro{
+    margin-top: 40px;
+    height: 30vh;
+    width: 100%;
+    z-index: 10;
+    background-image: url(/img/food2.jpg);
+    filter: brightness(1.1);
+    background-size: cover;
+    background-position: center;
+    background-color: #fce6cc;
+}
+#intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#intro h1{
+    color: #ffff;
+    font-size:60px;
+}
+.bi-list{
+    display: none;
+}
+.bi-x {
+    display: none;
+}
+div.logo p{
+    font-size: larger;
+    margin: 0;
+    padding: 0;
+    color:gold;
+    font-weight: bolder;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.navlinks{
+    display: flex;
+    align-items: center;
+}
+ul.menue{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: start;
+    justify-content: start;
+    gap: 30px;
+    color:#ffff;
+}
+ul.menue li:hover ul.sub-menue{
+    visibility: visible;
+    opacity: 1;
+    z-index: 10;
+    top: 70px;
+}
+ul li{
+    list-style: none;
+}
+ul.menue li:hover div.about-info{
+    visibility: visible;
+    opacity: 1;
+    z-index: 10;
+    top: 60px;
+}
+div.cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+div#account{
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    font-size: larger;
+}
+span#cart{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color:black;
+    font-size: larger;
+}
+.number-cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    top: 0;
+    right: 0;
+    color: 1;
+}
+#report{
+    margin: 40px 0 40px 0;
+}
+input{
+    width: 60%;
+    outline: none;
+    margin: 10px;
+    padding-left:10px ;
+}
+input#message{
+    height: 100px;
+}
+#line{
+    color: #000;
+}
+button{
+    width: 100px;
+    height: 40px;
+    background-color: orange;
+    border-radius: 10px;
+}
+#submit{
+    color: white;
+}
+
+#footer{
+    background-color:#000;
+    margin-top: 90px;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+#footer h2{
+    color: #ffd700;
+    font-size: larger;
+}
+#footer p{
+    color: #ffd700;
+    font-size: small;
+}
+#footer ul li a{
+    color: #ffd700;
+}
+#footer ul li a:hover{
+    color: #ffff;
+    text-decoration: underline;
+}
+#footer span a{
+    color: #ffd700;
+    margin-right: 20px;
+}
+select{
+    background-color: #ffd700;
+}
+@media(max-width:778px){
+    input{
+        width: 90%;
+        height: 30px;
+    }
+    .bi-list{
+            display: block;
+            position: absolute;
+            color: #f0d885;
+            cursor: pointer;
+            font-size: xx-large;
+            background-color: #633729;
+            top: 80px;
+            right: 10px;
+        }
+    .bi-x{
+            display: block;
+            position: absolute;
+            cursor: pointer;
+            color: #f0d885;
+            font-size: xx-large;
+            top: 70px;
+            right: 10px;
+            z-index: 40;
+        }
+    
+    ul.menue{
+            z-index: 30;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            position: absolute;
+            top: 70px;
+            right: -80%;
+            padding-left: 20px;
+            margin: 0;
+            align-items: start;
+            justify-content: start;
+            gap: 30px;
+            color:#f0d885;
+            padding-top: 50px;
+            background-color: black;
+            width: 70%;
+            height: 100vh;
+            transition: right 0.7s ease-in-out;
+        }
+    ul.menue-active{
+            right:0;
+        }
+    .accordion-button{
+            font-size: large;
+            color: #ffff;
+        }
+    .accordion{
+           --bs-accordion-btn-bg:#000;
+            --bs-accordion-bg:#0000;
+            --bs-accordion-active-bg:#0000;
+            --bs-accordion-border-color:#000;
+            --bs-accordion-btn-padding-x:2px;
+            --bs-accordion-body-padding-x:0;
+            margin-bottom: 4px;
+        }
+    .accordion-button ul li{
+            color: #ffff;
+            margin-left: -30px;
+        }
+    .accordion-body ul li a{
+            color: #ffff;
+        }
+    .accordion-body ul li{
+            padding: 10px;
+            margin-left: -20px;
+        }
+    .accordion-button:not(.collapse){
+            box-shadow: none;
+        }
+    #Notification{
+            position: absolute;
+            background-color: black;
+            color:white ;
+            right: 10px;
+            top: 70px;
+            width: 50%;
+            text-align: center;
+        }
+        div.logo p{
+            font-size: larger;
+            margin: 0;
+            padding: 0;
+            color:gold;
+            font-weight: bolder;
+        }
+}
