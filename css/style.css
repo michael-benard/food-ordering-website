@@ -94,6 +94,9 @@ ul.sub-menue li{
 ul.sub-menue li:hover{
     background-color: burlywood;
 }
+ul.menue li a:hover{
+    color: #ffd700;
+}
 ul li{
     list-style: none;
 }
