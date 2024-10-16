@@ -318,8 +318,9 @@ select{
         cursor: pointer;
         font-size: xx-large;
         background-color: #000;
-        top: 120px;
+        top: 110px;
         right: 10px;
+        z-index: 40;
     }
     .bi-x{
         display: block;
@@ -329,7 +330,7 @@ select{
         font-size: xx-large;
         top: 100px;
         right: 10px;
-        z-index: 40;
+        z-index: 5;
     }
 
     ul.menue{
@@ -354,6 +355,7 @@ select{
     }
     ul.menue-active{
         right:0;
+        top: 100%;
     }
     .accordion-button{
         font-size: large;

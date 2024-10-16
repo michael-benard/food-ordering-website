@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded',() => {
     iconbtn.addEventListener("click",() => {
         menu.classList.add("menue-active")
         iconbtn.style.display = "none"
-        cancelbtn.style.display = "block";
+        cancelbtn.style.display = "block"
+        cancelbtn.style.zIndex = "50"
     });
     cancelbtn.addEventListener("click", () => {
         menu.classList.remove("menue-active")
@@ -32,10 +33,13 @@ let product = [
 document.getElementById("search").addEventListener("mouseenter",() => {
     document.getElementById("search").style.color = "gold"
     let input =  document.getElementById("searchs")
-       input.classList.add("shows")
-       document.getElementById("search").addEventListener("click",() => {
-        let search = input.value.trim().toUpperCase()
-       let found = product.filter(x => x.Name.toUpperCase().includes(search)) 
+    input.classList.add("shows")
+    document.getElementById("search").addEventListener("click",() => {
+       let search = input.value.trim().toUpperCase()
+       let found = product.filter(x => x.Name.toUpperCase().includes(search))
+       input.style.width = "100%" 
+       input.style.height = "40px" 
+       input.style.borderRadius = "20px" 
        if(found.length > 0){
         let resp = ""
         found.forEach((x,index) => {
@@ -57,7 +61,7 @@ document.getElementById("search").addEventListener("mouseenter",() => {
         document.getElementById("main").style.textAlign = "center"
         document.getElementById("main").innerHTML = `we dont have ${search} in our menu`
        }
-       })
+    })
 })
 let localCart = localStorage.getItem('cart');
 let cart = !localCart ? [] : JSON.parse(localCart);
@@ -106,7 +110,8 @@ function addToCart(cartItem){
         items.quantity += 1;
         items.price = menu.price
         cart.total = items.quantity * menu.price
-        // console.log(cart.total)
+        let notice = document.getElementById("Notification")
+        notice.innerHTML = `${menu.Name} quantity in your cart has been updated`
     }
     localStorage.setItem('cart', JSON.stringify(cart));
 }
